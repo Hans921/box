@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#box{
+    display: flex;
+    /* 水平居中 */
+    justify-content: center;
+    /* 垂直居中 */
+    align-items: center;
+    /* vh:窗口可见部分的大小 */
+    height: 100vh;
+    background-color: #232e6d;
+}
+
+ul{
+    height: 200px;
+}
+
+li{
+    float: left;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    margin-right: 10px; 
+    /* background-color: white; */
+}
+
+li:nth-child(1){
+    background-color: #d63038;
+    animation: love1 4s infinite;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    /* 
+        name:动画名称
+        duation:需要完成的事件
+        timing-function:动作完成的速度
+            默认值：ease 低速→快速→低速
+            linear 从头到尾速度相同
+            ease-in 低速开始
+            ease-out 低速结束
+            ease-in-out 低速开始低速结束
+            cubic-bezier(n,n,n,n) n:0-1自定义
+            delay 启动前的间隔
+            interation-count 播放次数
+                infinite 无限次
+                n 默认为1
+    */
+}
+li:nth-child(2){
+    background-color: #ee54e1;
+    animation: love2 4s infinite;
+    animation-delay: 0.15s;
+}
+li:nth-child(3){
+    background-color: #8036f7;
+    animation: love3 4s infinite;
+    animation-delay: 0.45s;
+}
+li:nth-child(4){
+    background-color: #2d68e7;
+    animation: love4 4s infinite;
+    animation-delay: 0.6s;
+}
+li:nth-child(5){
+    background-color: #37e284;
+    animation: love5 4s infinite;
+    animation-delay: 0.75s;
+}
+li:nth-child(6){
+    background-color: #ecfc5a;
+    animation: love4 4s infinite;
+    animation-delay: 0.9s;
+}
+li:nth-child(7){
+    background-color: #e0c134;
+    animation: love3 4s infinite;
+    animation-delay: 1.05s;
+}
+li:nth-child(8){
+    background-color: #f59c48;
+    animation: love2 4s infinite;
+    animation-delay: 1.2s;
+}
+li:nth-child(9){
+    background-color: #f15151;
+    animation: love1 4s infinite;
+    animation-delay: 1.35s;
+}
+
+@keyframes love1{
+    25%,50%{height: 60px;transform: translateY(-30px);}
+    75%,100%{height: 20px;transform: translateY(0);}
+}
+@keyframes love2{
+    25%,50%{height: 125px;transform: translateY(-62.5px);}
+    75%,100%{height: 20px;transform: translateY(0);}
+}
+@keyframes love3{
+    25%,50%{height: 160px;transform: translateY(-75px);}
+    75%,100%{height: 20px;transform: translateY(0);}
+}
+@keyframes love4{
+    25%,50%{height: 180px;transform: translateY(-60px);}
+    75%,100%{height: 20px;transform: translateY(0);}
+}
+@keyframes love5{
+    25%,50%{height: 190px;transform: translateY(-45px);}
+    75%,100%{height: 20px;transform: translateY(0);}
+}
